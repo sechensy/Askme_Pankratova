@@ -36,7 +36,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
             <div class="container-fluid p-2" style="background: #6F635B;">
-                <div class="d-flex w-100 justify-content-between align-items-center">
+                <div class="d-flex w-100 justify-content-between align-items-center me-3 ms-3">
                     <a class="navbar-brand text-light" href="index.html">
                         <img src="../static/img/laptop-code-solid.svg" alt="Logo" width="30" height="24"
                             class="d-inline-block align-text-top">
@@ -90,7 +90,7 @@
                 </div>
 
                 <form>
-                    <p class=" col-sm-8 text-center color3">Sorry, wrong password!</p>
+                    <!-- <p class=" col-sm-8 text-center color3">Sorry, wrong password!</p> -->
 
                     <div class="row mb-3 text-end">
                         <label class="col-sm-3 col-form-label">Login</label>
@@ -103,8 +103,12 @@
                     <div class="row mb-3 text-end">
                         <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
                         <div class="col-sm-5">
-                          <input type="password" class="form-control" id="inputPassword">
+                          <input type="password" class="form-control is-invalid" id="inputPassword">
+                        <div class="invalid-feedback text-start">
+                            Sorry, wrong password!
                         </div>
+                        </div>
+                        
                     </div>
 
 
@@ -167,22 +171,6 @@
         </div>
     </footer>
 
-    <script>
-        function validatePassword(event) {
-            event.preventDefault(); // Остановим отправку формы для проверки
-            const passwordInput = document.getElementById('password').value;
-            const errorMessage = document.getElementById('error-message');
-
-            // Пример проверки: правильный пароль - "password123"
-            if (passwordInput !== 'password123') {
-                errorMessage.style.display = 'block';
-            } else {
-                errorMessage.style.display = 'none';
-                alert('Successfully logged in!');
-                // Здесь можно добавить логику для отправки формы или перенаправления
-            }
-        }
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
