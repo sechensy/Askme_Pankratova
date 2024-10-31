@@ -81,7 +81,7 @@
         </nav>
     </header>
 
-    <main class="mt-5">
+    <main class="mt-5 container">
         <div class="row container">
             <div class="col-lg-9">
                 <!-- <h1>New question</h1> -->
@@ -93,49 +93,44 @@
                 </div>
 
                 <form>
-
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">Login</label>
+                        <label for="inputLogin" class="col-sm-3 col-form-label">Login</label>
                         <div class="col-sm-5">
-                            <input class="form-control" value="dr_pepper">
+                            <input id="inputLogin" class="form-control" value="dr_pepper">
                         </div>
                     </div>
-
+                
                     <div class="row mb-3 text-end">
                         <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-5">
                             <input type="email" class="form-control" id="inputEmail3" value="dr.pepper@mail.ru">
                         </div>
                     </div>
-
-
+                
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">NickName</label>
+                        <label for="inputNickname" class="col-sm-3 col-form-label">NickName</label>
                         <div class="col-sm-5">
-                            <input class="form-control" value="dr pepper">
+                            <input id="inputNickname" class="form-control" value="dr pepper">
                         </div>
                     </div>
-
-                    <div class="row mb-3 ">
-                        <label class="col-sm-3 col-form-label text-end">Upload avatar</label>
+                
+                    <div class="row mb-3">
+                        <label for="formFile" class="col-sm-3 col-form-label text-end">Upload avatar</label>
                         <div class="col-sm-5">
-
-                            <!-- <img src="..." class="img-thumbnail" alt="..."> -->
-                            <img src="../static/img/2722809.jpg" alt="Avatar" width="200" class="img-thumbnail ms-2 ">
+                            <img src="../static/img/2722809.jpg" alt="Avatar" width="200" class="img-thumbnail ms-2">
                             <div class="mb-3">
                                 <input class="form-control" type="file" id="formFile">
                             </div>
                         </div>
                     </div>
-
+                
                     <div class="row mb-3">
                         <div class="col-sm-9 offset-sm-3">
                             <button type="submit" class="btn btn-bd-red text-light">Save</button>
                         </div>
                     </div>
-
-
                 </form>
+                
             </div>
 
             <div class="col-lg-3">

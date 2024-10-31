@@ -78,7 +78,7 @@
         </nav>
     </header>
 
-    <main class="mt-5">
+    <main class="mt-5 container">
         <div class="row container">
             <div class="col-lg-9">
                 <!-- <h1>New question</h1> -->
@@ -90,16 +90,15 @@
                 </div>
 
                 <form>
-                    <!-- <p class=" col-sm-8 text-center color3">Sorry, wrong password!</p> -->
-
+                    <!-- <p class="col-sm-8 text-center color3">Sorry, wrong password!</p> -->
+                
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">Login</label>
+                        <label for="inputLogin" class="col-sm-3 col-form-label">Login</label>
                         <div class="col-sm-5">
-                            <input class="form-control ">
+                            <input type="text" id="inputLogin" class="form-control">
                         </div>
                     </div>
-
-
+                
                     <div class="row mb-3 text-end">
                         <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
                         <div class="col-sm-5">
@@ -108,23 +107,21 @@
                                 Sorry, wrong password!
                             </div>
                         </div>
-
                     </div>
-
-
+                
                     <div class="row mb-3">
                         <div class="col-sm-9 offset-sm-3">
                             <button type="submit" class="btn btn-bd-red text-light">Log in!</button>
                         </div>
                     </div>
-
+                
                     <div class="row mb-3">
                         <div class="col-sm-9 offset-sm-3">
-                            <a href="singup.html">Create new account</a>
+                            <a href="signup.html">Create new account</a>
                         </div>
                     </div>
-
                 </form>
+                
             </div>
 
             <div class="col-lg-3">
