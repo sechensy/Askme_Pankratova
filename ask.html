@@ -94,44 +94,41 @@
 
                 <form>
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">Title</label>
+                        <label for="title" class="col-sm-3 col-form-label">Title</label>
                         <div class="col-sm-7">
-                            <input class="form-control border border-black is-invalid" placeholder="Add question title">
+                            <input id="title" class="form-control border border-black is-invalid"
+                                placeholder="Add question title">
                             <div class="invalid-feedback text-start">
                                 Please, add title.
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">Text</label>
+                        <label for="text" class="col-sm-3 col-form-label">Text</label>
                         <div class="col-sm-7">
-                            <textarea class="form-control border border-black is-invalid" rows="10"
+                            <textarea id="text" class="form-control border border-black is-invalid" rows="10"
                                 placeholder="Add a description of the question"></textarea>
-                                <div class="invalid-feedback text-start">
-                                    Please, add description.
-                                </div>
+                            <div class="invalid-feedback text-start">
+                                Please, add description.
+                            </div>
                         </div>
                     </div>
-
                     <div class="row mb-3 text-end">
-                        <label class="col-sm-3 col-form-label">Tags</label>
+                        <label for="tags" class="col-sm-3 col-form-label">Tags</label>
                         <div class="col-sm-7">
-                            <input class="form-control border border-black is-invalid" placeholder="Add tags">
+                            <input id="tags" class="form-control border border-black is-invalid" placeholder="Add tags">
                             <div class="invalid-feedback text-start">
                                 Please, add tags.
                             </div>
                         </div>
-
                     </div>
-
-
-
                     <div class="row mb-3">
                         <div class="col-sm-9 offset-sm-3">
                             <button type="submit" class="btn btn-bd-red text-light">Ask!</button>
                         </div>
                     </div>
                 </form>
+
             </div>
 
             <div class="col">
@@ -141,14 +138,14 @@
                         <!-- <h2><a href="#" class="text-dark">Popular Tags</a></h2> -->
                         <h2>Popular Tags</h2>
                         <div>
-                            <span class="badge bg-color2">Primary</span>
-                            <span class="badge text-bg-dark">Secondary</span>
-                            <span class="badge custom-card-bg">Success</span>
-                            <span class="badge text-bg-secondary">Danger</span>
-                            <span class="badge text-bg-secondary">Warning</span>
-                            <span class="badge custom-card-bg">Info</span>
-                            <span class="badge bg-color2">Light</span>
-                            <span class="badge text-bg-dark">Dark</span>
+                            <span class="badge bg-color2"><a href="#" class="text-light">Primary</a></span>
+                            <span class="badge text-bg-dark"><a href="#" class="text-light">Secondary</a></span>
+                            <span class="badge custom-card-bg"><a href="#" class="text-light">blablabla</a></span>
+                            <span class="badge text-bg-secondary"><a href="#" class="text-light">Danger</a></span>
+                            <span class="badge text-bg-secondary"><a href="#" class="text-light">Warning</a></span>
+                            <span class="badge custom-card-bg"><a href="#" class="text-light">Info</a></span>
+                            <span class="badge bg-color2"><a href="#" class="text-light">Light</a></span>
+                            <span class="badge text-bg-dark"><a href="#" class="text-light">Dark</a></span>
                         </div>
                     </section>
 
